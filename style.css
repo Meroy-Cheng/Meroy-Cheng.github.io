@@ -1,6 +1,7 @@
 /* 設置網頁主體樣式 */
 html, body {
     margin: 0;  /* 去掉網頁主體的預設外邊距 */
+    background-color: #fff9f6;
 }
 
 /* 設置網頁字體樣式 */
@@ -29,6 +30,8 @@ h1 {
 img {
     text-align: center; /* 將文字置中 */
     position: absolute;
+    border-radius: 20%;
+    box-shadow: 0px 0px 100px 50px rgb(255, 255, 255);
 }
 .center {
     display: flex;
