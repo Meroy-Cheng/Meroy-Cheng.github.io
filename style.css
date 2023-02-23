@@ -36,3 +36,7 @@ img {
     align-items: center;
     height: 80vh;
 }
+#favicon {
+    width: 16px;
+    height: 8px;
+}
