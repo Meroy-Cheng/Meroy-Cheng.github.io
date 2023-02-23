@@ -1,0 +1,38 @@
+/* 設置網頁主體樣式 */
+html, body {
+    margin: 0;  /* 去掉網頁主體的預設外邊距 */
+}
+
+/* 設置網頁字體樣式 */
+html {
+    /* 使用指定字體，如果無法加載則依次使用後面的備選字體 */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;  /* 將 HTML 根元素高度設置為 100% */
+}
+
+/* 設置網頁主體樣式 */
+body {
+    overflow: hidden;  /* 隱藏主體內容溢出的部分 */
+    height: inherit;  /* 繼承父元素 HTML 的高度 */
+}
+
+/* 設置網頁標題樣式 */
+h1 {
+    text-align: center; /* 將文字置中 */
+    color: #3333ac; /* 將文字顏色設為藍色 */
+    font-size: 4rem;  /* 設置標題字體大小 */
+    letter-spacing: -1px;  /* 設置字母間距 */
+    top: 0px;  /* 將標題向上移動一些像素 */
+    right: 0px;  /* 將標題向右移動一些像素 */
+    text-shadow: 0 0 4px white;  /* 為標題添加文本陰影，讓其看起來更加突出 */
+}
+img {
+    text-align: center; /* 將文字置中 */
+    position: absolute;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
