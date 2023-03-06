@@ -19,20 +19,43 @@ body {
 
 /* 設置網頁標題樣式 */
 h1 {
-    text-align: center; /* 將文字置中 */
-    color: #3333ac; /* 將文字顏色設為藍色 */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fad814; /* 將文字顏色設為藍色 */
     font-size: 4rem;  /* 設置標題字體大小 */
     letter-spacing: -1px;  /* 設置字母間距 */
-    top: 0px;  /* 將標題向上移動一些像素 */
-    right: 0px;  /* 將標題向右移動一些像素 */
-    text-shadow: 0 0 4px white;  /* 為標題添加文本陰影，讓其看起來更加突出 */
+    top: 10px;  /* 將標題向上移動一些像素 */
+    right: 10px;  /* 將標題向右移動一些像素 */
 }
+
 img {
     text-align: center; /* 將文字置中 */
-    position: absolute;
+    position: fixed;
+    bottom: 0;
+}
+
+.logo {
+    position: relative;
+    z-index: 999;
+    left: 7px;
+    height: 30px;
+    width: 80px;
+}
+
+.main {
+    text-align: center; /* 將文字置中 */
+    position: fixed;
+    bottom: 0;
+    width: 430px;
     border-radius: 20%;
     box-shadow: 0px 0px 100px 50px rgb(255, 255, 255);
 }
+#dy_bar {
+     background-color: #0066b0;
+     font-size: 14px;
+     padding: 3px 0px 3px;
+     color: #fad814; /* 將文字顏色設為藍色 */
+     font-family: Arial, Helvetica, sans-serif;
+ }
 .center {
     display: flex;
     justify-content: center;
@@ -44,18 +67,46 @@ img {
     height: 8px;
 }
 
-.spinner {
-    text-align: center; /* 將文字置中 */
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 5px solid #ccc;
-    border-top-color: #999;
-    animation: spin 1s ease-in-out infinite;
-    margin: 0 auto;
-}
 
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+.loader-container {
+    padding: 100px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #7986cb;
+    padding: 10px 8px 8px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+.loading-message {
+    margin-top: 16px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
 }
