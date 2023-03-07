@@ -43,7 +43,8 @@ img {
 
 .main {
     text-align: center; /* 將文字置中 */
-    position: fixed;
+    position: relative;
+    z-index: 998;
     bottom: 0;
     width: 430px;
     border-radius: 20%;
