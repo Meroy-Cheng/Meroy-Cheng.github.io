@@ -10,15 +10,30 @@
 </head>
 
 <body>
-
-<h1>我們正在努力中...</h1>
-<p style = "text-align: center">感謝您的耐心等待，稍後即將轉到 IKEA 的網站。</p>
-
-<div class="spinner"></div>
-
-<div class = "center">
-    <img src="dog.jpg" alt = "一隻ikea狗狗" width="400" height="350">
+<div id = "dy_bar">
+    <div style="display: flex; align-items: center; justify-content: left;">
+        <img class="logo" src="logo.jpg" alt="ikea logo">
+    </div>
 </div>
 
+<div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+
+<div class="loader-container">
+    <div class="loader"></div>
+    <p></p>
+    <p class="loading-message" id="countdown"></p>
+    <div class = "center">
+        <img class = "main" src="dog.jpg" alt = "一隻ikea狗狗">
+    </div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
